@@ -179,8 +179,7 @@ def main():
                 beam = None
                 bombs[i] = None
                 bird.change_img(6, screen)
-        # Noneでない爆弾だけのリストを作る
-        bombs = [bomb for bomb in bombs if bomb is not None]
+        bombs = [bomb for bomb in bombs if bomb is not None]    #1
         key_lst = pg.key.get_pressed()
         bird.update(key_lst, screen)
         for bomb in bombs:
