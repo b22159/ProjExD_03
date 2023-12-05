@@ -112,7 +112,7 @@ class Bomb:
         self.img.set_colorkey((0, 0, 0))
         self.rct = self.img.get_rect()
         self.rct.center = random.randint(0, WIDTH), random.randint(0, HEIGHT)
-        self.vx, self.vy = random.choice([-5, +5], [-5, +5])
+        self.vx, self.vy = random.choice([-5, +5]), random.choice([-5, +5])
 
     def update(self, screen: pg.Surface):
         """
